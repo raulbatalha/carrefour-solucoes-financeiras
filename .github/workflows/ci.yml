@@ -1,4 +1,4 @@
-name: API Tests - Serverest
+name: API Tests Carrefour - Serverest
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
       run: |
         npx allure generate allure-results --clean -o allure-report
 
-    - name: Deploy Allure Report to GitHub Pages 🚀
+    - name: Deploy Allure Report to GitHub Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v3
       with:
